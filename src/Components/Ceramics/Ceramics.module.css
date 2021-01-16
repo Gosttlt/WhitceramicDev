@@ -1,0 +1,17 @@
+.ceramicsBox {margin: 40px 0px; display: flex;}
+.link {text-decoration: none; color: black; width: 33.33%; padding: 0 10px;}
+.itemsBox {display: flex; flex-wrap: wrap; width: 80%;}
+.itemBox {margin: 10px 0px; max-width: 300px; box-shadow: 5px 5px 10px 5px #b3b3b3; border: 1px solid rgb(187, 184, 184); transition: .5s;}
+.itemBox:hover {box-shadow: 5px 5px 10px 5px #ffffff; border: 1px solid white; background-color: #dadada;}
+.imgBox {height: 250px; overflow: hidden;}
+.imgBox img {width: 100%; height: 100%;}
+.descriptBox {padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;}
+.values { font-weight: bold; margin-left: 5px;}
+.descrBigBox {display: flex; flex-direction: column; width: 100%;}
+.buttonAndPriceBox {display: flex; justify-content: space-between;}
+.button {background: gray; border-radius: 3px; font-size: 12px; cursor: pointer; transition: .5s;
+    color: white; font-weight: bold; padding: 5px; margin-top: 5px; border: 1px solid rgb(134, 134, 134); outline: none;}
+.button:hover { background: rgb(177, 177, 177); border-color: rgb(177, 177, 177); color: rgb(105, 103, 103);}
+.descrItem {padding: 3px 0px; display: flex;}
+
+

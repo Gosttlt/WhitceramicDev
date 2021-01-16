@@ -1,0 +1,15 @@
+.homeBox {margin-top:50px; background-color: white;  box-shadow: 11px 11px 11px -1px #000000;}
+.home {display: flex; align-items: center; padding: 30px; margin-bottom: 54px;}
+.h3 {font-size: 24px; font-weight: bold; text-align: center; padding-top: 30px;}
+.logo { height: fit-content;}
+
+.textLogo {text-align: center; padding-bottom: 30px; font-weight: bold;}
+.logoBox {position: relative; margin-bottom: 50px; }
+.logoBox::after, .logoBox::before { left: 0; content: url('../../images/Header/frame.jpg'); height: 10px; position: absolute; overflow: hidden; width: 100%; border: 1px solid black;}
+.logoBox::after {bottom: -15px; }
+.logoBox::before {top: 30px; }
+.content { padding-left: 10px;}
+.itemBox { cursor: pointer; transition: 1s; font-style: italic; text-align: center; display: flex; border: 1px solid rgb(170, 170, 170); margin: 10px; padding: 10px; box-shadow: 8px 10px 27px 0px #8c8c8c;}
+.itemImg { width: 50px; padding-left: 10px; transform: rotate(0deg); transition: 2s; transform-origin: 60% 50%;}
+.itemBox:hover > .itemImg { transform: rotate(360deg);}
+.itemBox:hover { box-shadow: 8px 10px 27px 0px #e2e2e2; border: 1px solid rgb(199, 199, 199); transition: 1s;}
