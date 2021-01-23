@@ -2,7 +2,7 @@ import React from 'react';
 import s from "./Filter.module.css";
 import FilterParams from './FilterParams/FilterParams';
 
-const Filter = ({ ceramics, porertys, addProperty, setFilterProperty }) => {
+const Filter = ({ ceramics, addProperty, setFilterProperty, porertys }) => {
 
     let arrProppy = [
         { name: 'country', vol: 'Страна' },
@@ -25,7 +25,7 @@ const Filter = ({ ceramics, porertys, addProperty, setFilterProperty }) => {
 
     return (
         <div className={s.filter}>
-           <FilterParams arrPropsCreater={arrPropsCreater} setFilterProperty={setFilterProperty} addProperty={addProperty} ceramics={ceramics} porertys={porertys}/>
+           <FilterParams ceramics={ceramics}  porertys={porertys} arrPropsCreater={arrPropsCreater}  setFilterProperty={setFilterProperty} addProperty={addProperty}/>
         </div>
     )
 }

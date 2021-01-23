@@ -4,8 +4,8 @@ import Ceramics from "./Ceramics";
 
 let mapStateToProps = (state) => ({
     ceramics: state.ceramicsReducer.ceramics,
-    porertys: state.ceramicsReducer.porertys,
     filterArr: state.ceramicsReducer.filterArr,
+    porertys: state.ceramicsReducer.porertys,
 })
 
 

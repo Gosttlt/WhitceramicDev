@@ -21,7 +21,7 @@
 
 .searchBox {white-space: nowrap; margin-top: 20px; display: flex;}
 .search { width: 200px; transition: 1s; border-radius: 5px 0 0 5px;  height: 30px; border: 1px solid gray; border-right :none; padding: 10px;}
-.buttonSearch {cursor: pointer; width: 10%; padding: 5px 0px; border-radius: 0 5px 5px 0; height: 30px; border: 1px solid gray; color: white; background-color: gray; font-weight: bold;}
+.buttonSearch {cursor: pointer; width: 10%; padding: 5px 0px; border-radius: 0 5px 5px 0; height: 30px; border: 1px solid gray; color: white; background-color: gray; font-weight: bold; text-align: center; text-decoration: none;}
 .buttonSearch:hover {color: black; background-color: rgb(207, 207, 207); transition: .5s;}
 .category {display: flex; margin: 0 auto; position: absolute; left: 50%; transition: 1s;}
 .category p {margin-right: 10px;}

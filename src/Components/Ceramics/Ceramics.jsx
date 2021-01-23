@@ -6,10 +6,8 @@ import Filter from './Filter/Filter';
 
 
 
-const Ceramics = ({ ceramics, addProperty, porertys, filterArr, setFilterProperty }) => {
-     console.log(filterArr);
-     console.log(porertys);
-
+const Ceramics = ({ ceramics, addProperty, filterArr, setFilterProperty, porertys }) => {
+    
     let collection = filterArr.map(c => {
         return <NavLink key={c.id} to="ceramics" className={s.link}>
             <div className={s.itemBox}>
@@ -18,7 +16,7 @@ const Ceramics = ({ ceramics, addProperty, porertys, filterArr, setFilterPropert
                 </div>
                 <div className={s.descriptBox}>
                     <div className={s.descrBigBox}>
-                        <div className={s.descrItem}><p>Фирма: {c.id}</p><span className={s.values}>{c.firm}</span></div>
+                        <div className={s.descrItem}><p>Фирма: </p><span className={s.values}>{c.firm}</span></div>
                         <div className={s.descrItem}><p>Коллекция: </p><span className={s.values}>{c.collection}</span></div>
                         <div className={s.descrItem}><p>Страна: </p><span className={s.values}>{c.country}</span></div>
                         <div className={s.buttonAndPriceBox}>
@@ -33,7 +31,7 @@ const Ceramics = ({ ceramics, addProperty, porertys, filterArr, setFilterPropert
 
 
     return <div className={s.ceramicsBox}>
-        <Filter ceramics={ceramics} addProperty={addProperty} porertys={porertys} setFilterProperty={setFilterProperty} />
+        <Filter ceramics={ceramics} addProperty={addProperty} setFilterProperty={setFilterProperty} porertys={porertys} />
         <div className={s.itemsBox}>{collection}</div>
     </div>
 }

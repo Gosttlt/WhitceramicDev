@@ -1,10 +1,11 @@
-.footer { padding-bottom: 10px; margin-top: auto; position: relative; height: 50px;}
-.footerBox {display: flex; justify-content: space-around; align-items: center;}
+.footer { margin-top: auto; position: relative; height: 30px; }
+.footerBox {display: flex; justify-content: space-around; align-items: center; background: white; 
+    margin-top: -20px; width: 100vw; position: absolute; left: 50%; margin-left: -50vw;}
 .footerBox::before, .footerBox::after {content: url('../../images/Header/frame.jpg');
      height: 10px; overflow: hidden; position: absolute; border-top: 1px solid black; border-bottom: 1px solid black;
      left: 50%; width: 100vw;margin-left: -50vw;
     }    
 .footerBox::before{top: -10px;}
+.footerLogo {width: 200px; padding: 5px;}
 .footerBox::after{bottom: -10px;}
-.logo {}
-.copyright {padding-bottom: 10px; }
+

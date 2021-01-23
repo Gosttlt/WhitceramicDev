@@ -2,8 +2,9 @@ import React from 'react';
 import logo from '../../images/Header/logo.jpg';
 import s from './Home.module.css';
 
-const Home = (props) => {
-    return <div className={s.homeBox}>
+const Home = () => {
+    return (
+     <div className={s.homeBox}>
         <p className={s.h3}>Компания <b>Whiteceramic</b> - Это про любовь к уютному, современому дизайну.</p>
         <div className={s.home}>
             <div className={s.logoBox}>
@@ -17,6 +18,7 @@ const Home = (props) => {
             </div>
         </div>
     </div>
+    )
 }
 
 export default Home;
